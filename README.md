@@ -15,6 +15,10 @@
   <img src="https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square" alt="MIT License">
 </p>
 
+<p align="center">
+  <a href="https://anhtnt90dev.github.io/web-browser/"><strong>Open the GitHub Pages guide</strong></a>
+</p>
+
 > Guide này lấy cảm hứng về cách trình bày từ [`walkinglabs/learn-harness-engineering`](https://github.com/walkinglabs/learn-harness-engineering): có visual preview, quick start, learning path, project breakdown, sơ đồ ASCII/Mermaid và kiểm chứng rõ ràng. Nội dung bên dưới được viết riêng cho dự án browser này.
 
 ---
@@ -291,4 +295,3 @@ web-browser/
 ## License
 
 MIT
-
