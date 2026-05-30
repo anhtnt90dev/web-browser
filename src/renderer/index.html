@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>From Scratch Browser</title>
+    <script type="module" src="/renderer.ts"></script>
+  </head>
+  <body>
+    <main class="browser-shell">
+      <section class="top-chrome" aria-label="Browser controls">
+        <div class="tab-strip" id="tab-strip" role="tablist" aria-label="Tabs"></div>
+
+        <form class="toolbar" id="address-form">
+          <button class="icon-button" id="back-button" type="button" aria-label="Back" title="Back">&#8592;</button>
+          <button class="icon-button" id="forward-button" type="button" aria-label="Forward" title="Forward">&#8594;</button>
+          <button class="icon-button" id="reload-button" type="button" aria-label="Reload" title="Reload">&#8635;</button>
+          <button class="icon-button" id="home-button" type="button" aria-label="Home" title="Home">&#8962;</button>
+          <input id="address-input" class="address-input" spellcheck="false" autocomplete="off" />
+          <button class="icon-button" id="bookmark-button" type="button" aria-label="Bookmark" title="Bookmark">&#9734;</button>
+          <button class="icon-button strong" id="new-tab-button" type="button" aria-label="New tab" title="New tab">+</button>
+        </form>
+
+        <div class="bookmark-bar" id="bookmark-bar" aria-label="Bookmarks"></div>
+      </section>
+
+      <section class="webview-stage" id="webview-stage" aria-label="Page"></section>
+      <footer class="status-bar" id="status-bar"></footer>
+    </main>
+  </body>
+</html>
+

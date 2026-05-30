@@ -1,0 +1,20 @@
+sequenceDiagram
+  participant U as User
+  participant R as Renderer UI
+  participant N as normalizeAddressInput
+  participant W as Webview
+  participant S as Browser state
+
+  U->>R: Type address or search text
+  R->>N: Normalize input
+  alt URL
+    N-->>R: https://example.com
+  else Search query
+    N-->>R: https://duckduckgo.com/?q=...
+  end
+  R->>S: Mark active tab loading
+  R->>W: loadURL(target)
+  W-->>R: did-navigate / title / loading events
+  R->>S: Update URL, title, history flags
+  R-->>U: Refresh toolbar, tab strip, status
+

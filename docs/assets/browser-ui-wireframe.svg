@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">From Scratch Browser UI wireframe</title>
+  <desc id="desc">A labeled wireframe showing tabs, toolbar, bookmark bar, page webview, and status bar.</desc>
+  <rect width="960" height="560" fill="#f6f7f9"/>
+  <rect x="32" y="28" width="896" height="504" rx="8" fill="#ffffff" stroke="#c7d0da" stroke-width="2"/>
+  <rect x="32" y="28" width="896" height="42" rx="8" fill="#eef1f4"/>
+  <rect x="52" y="42" width="180" height="28" rx="6" fill="#ffffff" stroke="#aeb8c4"/>
+  <rect x="240" y="42" width="180" height="28" rx="6" fill="#dfe6ed" stroke="#c7d0da"/>
+  <text x="72" y="61" font-family="Arial, sans-serif" font-size="13" fill="#25303b">Active tab</text>
+  <text x="260" y="61" font-family="Arial, sans-serif" font-size="13" fill="#65707e">Background tab</text>
+  <rect x="32" y="70" width="896" height="48" fill="#ffffff" stroke="#d7dde4"/>
+  <g fill="#ffffff" stroke="#aeb8c4">
+    <rect x="52" y="80" width="34" height="30" rx="5"/>
+    <rect x="94" y="80" width="34" height="30" rx="5"/>
+    <rect x="136" y="80" width="34" height="30" rx="5"/>
+    <rect x="178" y="80" width="34" height="30" rx="5"/>
+  </g>
+  <text x="63" y="100" font-family="Arial, sans-serif" font-size="14" fill="#25303b">&lt;</text>
+  <text x="105" y="100" font-family="Arial, sans-serif" font-size="14" fill="#25303b">&gt;</text>
+  <text x="146" y="100" font-family="Arial, sans-serif" font-size="14" fill="#25303b">R</text>
+  <text x="188" y="100" font-family="Arial, sans-serif" font-size="14" fill="#25303b">H</text>
+  <rect x="224" y="80" width="578" height="30" rx="5" fill="#f9fafb" stroke="#2563eb"/>
+  <text x="244" y="100" font-family="Arial, sans-serif" font-size="13" fill="#65707e">Address bar: URL or search query</text>
+  <rect x="814" y="80" width="34" height="30" rx="5" fill="#fff7df" stroke="#d89d22"/>
+  <rect x="856" y="80" width="34" height="30" rx="5" fill="#0f766e" stroke="#0f766e"/>
+  <text x="825" y="100" font-family="Arial, sans-serif" font-size="14" fill="#8a5a00">*</text>
+  <text x="868" y="100" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">+</text>
+  <rect x="32" y="118" width="896" height="36" fill="#ffffff" stroke="#d7dde4"/>
+  <rect x="52" y="126" width="120" height="22" rx="4" fill="#eef6f5" stroke="#aeb8c4"/>
+  <rect x="184" y="126" width="136" height="22" rx="4" fill="#fbfcfd" stroke="#d7dde4"/>
+  <text x="68" y="142" font-family="Arial, sans-serif" font-size="12" fill="#25303b">Bookmarks</text>
+  <text x="200" y="142" font-family="Arial, sans-serif" font-size="12" fill="#65707e">Saved page</text>
+  <rect x="32" y="154" width="896" height="342" fill="#ffffff" stroke="#d7dde4"/>
+  <text x="384" y="315" font-family="Arial, sans-serif" font-size="28" fill="#0f766e">Electron webview</text>
+  <text x="368" y="344" font-family="Arial, sans-serif" font-size="15" fill="#65707e">Isolated web page rendering area</text>
+  <rect x="32" y="496" width="896" height="36" rx="0" fill="#f9fafb" stroke="#d7dde4"/>
+  <text x="52" y="518" font-family="Arial, sans-serif" font-size="13" fill="#65707e">Status bar: hovered link or current URL</text>
+</svg>
+

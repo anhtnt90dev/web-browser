@@ -1,0 +1,11 @@
+flowchart TD
+  Start[Empty workspace] --> Scaffold[Create package and TypeScript config]
+  Scaffold --> Tests[Write tests for pure browser logic]
+  Tests --> Red[Run tests and watch missing modules fail]
+  Red --> Core[Implement navigation and browser state]
+  Core --> Green[Run tests and confirm pass]
+  Green --> Electron[Add Electron main and preload]
+  Electron --> UI[Build renderer tabs, toolbar, bookmarks, webviews]
+  UI --> Docs[Write bilingual docs and diagrams]
+  Docs --> Verify[Run test, typecheck, build, launch]
+

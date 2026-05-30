@@ -1,0 +1,11 @@
+flowchart LR
+  User[User] --> Chrome[Renderer browser chrome]
+  Chrome --> State[Tab and bookmark state]
+  Chrome --> Webview[Electron webview]
+  Webview --> Web[Web page process]
+  Chrome --> Preload[Preload bridge]
+  Preload --> Main[Electron main process]
+  Main --> Session[(Electron session)]
+  Main --> Policy[Webview security policy]
+  Policy --> Webview
+
