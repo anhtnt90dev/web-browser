@@ -30,6 +30,7 @@
 - [Quick Start](#quick-start)
 - [Capstone Project](#capstone-project)
 - [Learning Path](#learning-path)
+- [Browser Engineering Roadmap](#browser-engineering-roadmap)
 - [Syllabus](#syllabus)
 - [Verification](#verification)
 - [Repository Structure](#repository-structure)
@@ -230,6 +231,39 @@ Nên đọc và thực hành theo thứ tự này.
 | P04 | Renderer UI | `npm run build:renderer` |
 | P05 | Documentation pack | `docs/en`, `docs/vi`, `docs/diagrams`, `docs/assets` |
 | P06 | Full verification run | `npm test`, `npm run typecheck`, `npm run build`, `npm audit --omit=dev` |
+
+---
+
+## Browser Engineering Roadmap
+
+Sau khi đối chiếu với [`browser.engineering`](https://browser.engineering/) và repo [`browserengineering/book`](https://github.com/browserengineering/book), dự án có thể phát triển theo hai nhánh rõ ràng:
+
+```text
+    TRACK A: PRODUCT BROWSER SHELL        TRACK B: MINI ENGINE LAB
+    ==============================        ========================
+
+    Session restore                       URL + HTTP lifecycle
+    History page                          Canvas drawing model
+    Bookmark manager                      Text layout
+    Find in page                          HTML tokenizer/tree
+    Zoom controls                         CSS cascade
+    Download shelf                        Layout tree
+    Security indicator                    Paint commands
+    Error pages                           Accessibility concepts
+
+    Goal: app dùng tốt hơn                Goal: hiểu engine bên trong
+```
+
+Ba milestone nên làm tiếp:
+
+1. **Session và History**: persistent tabs, history reducer, history page.
+2. **Find, Zoom và Error Pages**: workflow browser giá trị cao trên Electron shell.
+3. **Mini Engine Lab**: package riêng `labs/mini-engine` để học URL fetching, HTML parsing, CSS, layout và painting.
+
+Roadmap chi tiết:
+
+- [Vietnamese roadmap](./docs/vi/browser-engineering-roadmap.md)
+- [English roadmap](./docs/en/browser-engineering-roadmap.md)
 
 ---
 

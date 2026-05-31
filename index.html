@@ -311,6 +311,7 @@
           <a href="#pattern">Pattern</a>
           <a href="#quick-start">Quick Start</a>
           <a href="#path">Learning Path</a>
+          <a href="#roadmap">Roadmap</a>
           <a href="#verification">Verification</a>
           <a href="https://github.com/anhtnt90dev/web-browser">GitHub</a>
         </div>
@@ -501,6 +502,52 @@ M05  Browser chrome                    M06  Verification and docs
         </table>
       </section>
 
+      <section id="roadmap">
+        <h2>Browser Engineering Roadmap</h2>
+        <p>
+          Sau khi đối chiếu với <a href="https://browser.engineering/">browser.engineering</a>
+          và repo <a href="https://github.com/browserengineering/book">browserengineering/book</a>,
+          dự án nên phát triển theo hai nhánh: nâng cấp Electron browser shell hiện tại và thêm
+          mini engine lab riêng để học cách browser hoạt động bên trong.
+        </p>
+
+        <pre><code>TRACK A: PRODUCT BROWSER SHELL        TRACK B: MINI ENGINE LAB
+==============================        ========================
+
+Session restore                       URL + HTTP lifecycle
+History page                          Canvas drawing model
+Bookmark manager                      Text layout
+Find in page                          HTML tokenizer/tree
+Zoom controls                         CSS cascade
+Download shelf                        Layout tree
+Security indicator                    Paint commands
+Error pages                           Accessibility concepts
+
+Goal: app dùng tốt hơn                Goal: hiểu engine bên trong</code></pre>
+
+        <div class="grid" aria-label="Recommended next milestones">
+          <div class="item">
+            <strong>M01: Session và History</strong>
+            <p>Persistent tabs, history reducer, history page và tests.</p>
+          </div>
+          <div class="item">
+            <strong>M02: Find, Zoom, Error Pages</strong>
+            <p>Thêm workflow browser giá trị cao mà chưa cần đổi rendering model.</p>
+          </div>
+          <div class="item">
+            <strong>M03: Mini Engine Lab</strong>
+            <p>Package riêng để học URL fetching, HTML parsing, CSS, layout và painting.</p>
+          </div>
+        </div>
+
+        <p>
+          Xem roadmap chi tiết:
+          <a href="docs/vi/browser-engineering-roadmap.md">tiếng Việt</a>
+          hoặc
+          <a href="docs/en/browser-engineering-roadmap.md">English</a>.
+        </p>
+      </section>
+
       <section id="verification">
         <h2>Verification Pipeline</h2>
         <pre><code>npm test
@@ -535,4 +582,3 @@ npm run dev
     </script>
   </body>
 </html>
-
